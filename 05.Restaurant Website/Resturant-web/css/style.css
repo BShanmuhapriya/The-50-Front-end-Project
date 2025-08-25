@@ -181,6 +181,10 @@ fieldset{
     display: inline;
     padding: 1%;
 }
+.social ul li a .linkedin{
+    width: 48px;
+    height: 48px;
+}
 
 /* for Order Section */
 .order{
@@ -199,6 +203,7 @@ fieldset{
     margin-bottom: 1%; 
     font-weight: bold;
 }
+
 
 
 
