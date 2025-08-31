@@ -35,9 +35,9 @@ function NavBar() {
   };
 
 return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{ backgroundColor: 'white', boxShadow: 'none'}}>
       <Container maxWidth="xl">
-        <Toolbar sx={{ display: 'flex', alignItems: 'center' }}>
+        <Toolbar sx={{ display: 'flex', alignItems: 'center', color: 'black' }}>
           {/* LEFT: Logo */}
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -58,7 +58,7 @@ return (
           </Typography>
 
           {/* RIGHT: mobile menu button */}
-          <Box sx={{ display: { xs: 'flex', md: 'none' }, ml: 'auto' }}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, ml: 'auto', color: 'black' }}>
             <IconButton
               size="large"
               aria-label="open nav"
@@ -72,9 +72,9 @@ return (
           </Box>
 
           {/* RIGHT: desktop pages */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: 'auto' }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: 'auto', color: 'black' }}>
             {pages.map((page) => (
-              <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white' }}>
+              <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'black' }}>
                 {page}
               </Button>
             ))}

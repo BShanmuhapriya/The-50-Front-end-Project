@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Layout from './components/layout/Layout'
+import SearchBar from './components/SearchBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
       <div>
         <Layout>
           <h1>Welcome to the Restaurant</h1>
+          <SearchBar />
         </Layout>
       </div>
     </>
